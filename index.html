@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Title Page -->
+    <title>سنبلة</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./images/logo.png" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Fancybox CSS -->
+    <meta name="theme-color" content="#121320" />
+    <meta name="msapplication-navbutton-color" content="#121320" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320" />
+
+    <!-- CSS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- CSS OwlCarousel 2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <!-- CSS Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <!-- CSS Flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/global.css" />
+  </head>
+  <body id="Home" class="overflow-hidden lg:pt-[115px] pt-[98px] relative">
+    <div
+      class="overlay fixed top-0 right-0 w-full h-full bg-overlay translate-x-[-100%] transition duration-700 ease-in-out z-[998]"
+    ></div>
+
+    <!-- Loading App -->
+    <div
+      class="loader w-full h-full fixed top-0 right-0 z-[9999999] flex items-center justify-center"
+    >
+      <img
+        src="./images/logo.png"
+        loading="lazy"
+        class="spinner max-w-[250px] relative z-[9]"
+        alt=""
+      />
+    </div>
+
+    <!-- Contact Fixed -->
+    <div
+      class="fixed bottom-[25px] ltr:right-[25px] rtl:left-[25px] z-[999] flex flex-col items-center justify-center rounded-[10px] gap-3"
+    >
+      <button
+        data-modal-target="request-modal"
+        data-modal-toggle="request-modal"
+        class="bg-[#26b251] w-[50px] text-[22px] h-[50px] flex items-center justify-center text-white rounded-full"
+      >
+        <i class="fa-solid fa-headset"></i>
+      </button>
+      <a
+        href=""
+        class="bg-[#26b251] w-[50px] text-[22px] h-[50px] flex items-center justify-center text-white rounded-full"
+        ><i class="fa-brands fa-whatsapp"></i
+      ></a>
+    </div>
+
+    <!-- Image Backgroud -->
+    <img
+      src="./images/shape.png"
+      class="absolute w-auto top-0 right-0 h-full z-[5]"
+      alt=""
+    />
+
+    <!-- BTN Scroll Top -->
+    <button
+      class="fix-up bg-secondary w-[50px] h-[50px] flex items-center justify-center text-white rounded-[10px] fixed bottom-[25px] rtl:right-[25px] ltr:left-[25px] z-[999]"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <!-- Header -->
+    <seaction class="fixed top-0 right-0 w-full z-[999]">
+      <header class="bg-secondary p-2 lg:block hidden border-b border-white">
+        <div class="container">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="flex lg:items-center gap-[20px] lg:flex-row flex-col">
+                <div class="flex items-center gap-2">
+                  <img
+                    loading="lazy"
+                    src="./images/phone.png"
+                    class="max-w-[35px]"
+                    alt=""
+                  />
+                  <p
+                    class="lg:text-white text-main text-[14px] font-normal"
+                    style="direction: ltr"
+                  >
+                    +201001846667
+                  </p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    loading="lazy"
+                    src="./images/email.png"
+                    class="max-w-[23px]"
+                    alt=""
+                  />
+                  <p class="lg:text-white text-main text-[14px] font-normal">
+                    Sh3wZa@gmail.com
+                  </p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    loading="lazy"
+                    src="./images/maps.png"
+                    class="max-w-[35px]"
+                    alt=""
+                  />
+                  <p class="lg:text-white text-main text-[14px] font-normal">
+                    السعودية _ الرياض
+                  </p>
+                </div>
+              </div>
+            </div>
+            <ul class="flex items-center flex-wrap gap-2">
+              <li>
+                <a
+                  href=""
+                  class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <nav class="bg-secondary py-2">
+        <div class="container">
+          <div
+            class="flex items-center lg:justify-normal justify-between w-full relative z-[999]"
+          >
+            <a href="index.html"
+              ><img
+                class="max-w-[120px]"
+                loading="lazy"
+                src="./images/logo.png"
+                alt=""
+            /></a>
+            <div class="flex items-center gap-4">
+              <!-- Lang On Mobile  -->
+              <a
+                href=""
+                class="text-white border rounded-lg w-[100px] h-[40px] lg:hidden flex items-center justify-center lg:m-0 my-2"
+                >English</a
+              >
+              <!-- Click BTN On Mobile Open Nav  -->
+              <div class="click-nav lg:hidden block">
+                <div class="handle bg-white"></div>
+                <div class="handle bg-white"></div>
+                <div class="handle bg-white"></div>
+              </div>
+            </div>
+            <div
+              class="list-head flex lg:items-center lg:ps-[10px] lg:flex-1 lg:justify-between lg:flex-row flex-col lg:!translate-x-[0] rtl:translate-x-[100%] ltr:translate-x-[-100%] transition duration-700 ease-in-out lg:relative lg:w-auto lg:h-auto lg:bg-transparent bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
+            >
+              <ul class="flex items-center nav-links-head lg:flex-row flex-col">
+                <li
+                  class="overflow-hidden active lg:my-0 my-2 lg:w-auto w-full"
+                >
+                  <a
+                    href=""
+                    data-value="Home"
+                    class="lg:mx-2 relative px-[20px] py-[10px] text-[16px] z-[9] overflow-hidden flex max-[1023px]:justify-center lg:text-white text-secondary text-center"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="overflow-hidden lg:my-0 my-2 lg:w-auto w-full">
+                  <a
+                    href=""
+                    data-value="About"
+                    class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[16px] z-[9] overflow-hidden flex max-[1023px]:justify-center lg:text-white text-secondary text-center"
+                    >حول الشركة</a
+                  >
+                </li>
+                <li class="overflow-hidden lg:my-0 my-2 lg:w-auto w-full">
+                  <a
+                    href=""
+                    data-value="Products"
+                    class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[16px] z-[9] overflow-hidden flex max-[1023px]:justify-center lg:text-white text-secondary text-center"
+                    >مشاريعنا</a
+                  >
+                </li>
+                <li class="overflow-hidden lg:my-0 my-2 lg:w-auto w-full">
+                  <a
+                    href=""
+                    data-value="Contact"
+                    class="lg:mx-2 relative lg:p-[10px] px-[20px] py-[10px] text-[16px] z-[9] overflow-hidden flex max-[1023px]:justify-center lg:text-white text-secondary text-center"
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+              <ul
+                class="flex items-center justify-center flex-wrap gap-2 lg:hidden mt-3 lg:px-0 px-3"
+              >
+                <li>
+                  <a
+                    href=""
+                    class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-secondary text-white rounded-full"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-secondary text-white rounded-full"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-secondary text-white rounded-full"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="w-[27px] h-[27px] text-[13px] flex items-center justify-center bg-secondary text-white rounded-full"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+              <a
+                href=""
+                class="text-white lg:inline-block hidden text-[20px] border-l border-r px-[10px] flex items-center justify-center"
+                >English</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </seaction>
+
+    <!-- Slider Head -->
+    <div class="main-body-slider relative overflow-hidden z-[9]" id="Home">
+      <div
+        id="sliderHome"
+        class="owl-carousel owl-theme sliderHome overflow-hidden"
+      >
+        <div class="item position-relative">
+          <img
+            src="./images/slider.png"
+            alt=""
+            loading="lazy"
+            class="lg:h-screen w-full h-[400px]"
+          />
+          <div
+            class="overlay-fix w-full h-full flex items-center absolute top-0 right-0 bg-overlay"
+          >
+            <div class="container overflow-hidden">
+              <div class="over-info lg:w-[700px] m-auto text-center">
+                <h1 class="font-bold lg:text-[60px] text-[40px] text-white">
+                  شركه سنبلة
+                </h1>
+                <p class="text-white text-[22px]">" كل السبل بين ايديك "</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section More Info -->
+    <div class="lg:my-[40px] relative z-[9]">
+      <div class="container">
+        <div class="flex justify-center flex-col lg:flex-row lg:gap-[150px]">
+          <div class="text-center my-3">
+            <div class="relative">
+              <img
+                loading="lazy"
+                src="./images/bg-shape.png"
+                class="w-[150px] h-[150px] object-contain m-auto"
+                alt=""
+              />
+              <h1
+                class="text-[18px] text-primary absolute top-[50%] translate-y-[-50%] text-center w-full font-bold"
+              >
+                رؤيتنا
+              </h1>
+            </div>
+            <p class="text-[12px]">
+              کیان راند تمتد خبراته لأعوام طويلة في مجال المقاولات والإنشاءات
+              المعمارية والإعلان عبر رحلة نجاح مشرفة استطعنا خلالها أن تقدم
+              خدمات رائدة لعملائنا في المملكة العربية السعودية. عملنا خلالها يدا
+              بيد مع الأفراد والمؤسسات للرقي بمستوى الأداء والاحترافية في العمل
+              بطرق إبداعية ومبتكرة
+            </p>
+          </div>
+          <div class="text-center my-3">
+            <div class="relative">
+              <img
+                loading="lazy"
+                src="./images/bg-shape.png"
+                class="w-[150px] h-[150px] object-contain m-auto"
+                alt=""
+              />
+              <h1
+                class="text-[18px] text-primary absolute top-[50%] translate-y-[-50%] text-center w-full font-bold"
+              >
+                رسالتنا
+              </h1>
+            </div>
+            <p class="text-[12px]">
+              کیان راند تمتد خبراته لأعوام طويلة في مجال المقاولات والإنشاءات
+              المعمارية والإعلان عبر رحلة نجاح مشرفة استطعنا خلالها أن تقدم
+              خدمات رائدة لعملائنا في المملكة العربية السعودية. عملنا خلالها يدا
+              بيد مع الأفراد والمؤسسات للرقي بمستوى الأداء والاحترافية في العمل
+              بطرق إبداعية ومبتكرة
+            </p>
+          </div>
+          <div class="text-center my-3">
+            <div class="relative">
+              <img
+                loading="lazy"
+                src="./images/bg-shape.png"
+                class="w-[150px] h-[150px] object-contain m-auto"
+                alt=""
+              />
+              <h1
+                class="text-[18px] text-primary absolute top-[50%] translate-y-[-50%] text-center w-full font-bold"
+              >
+                قيمنا
+              </h1>
+            </div>
+            <p class="text-[12px]">
+              کیان راند تمتد خبراته لأعوام طويلة في مجال المقاولات والإنشاءات
+              المعمارية والإعلان عبر رحلة نجاح مشرفة استطعنا خلالها أن تقدم
+              خدمات رائدة لعملائنا في المملكة العربية السعودية. عملنا خلالها يدا
+              بيد مع الأفراد والمؤسسات للرقي بمستوى الأداء والاحترافية في العمل
+              بطرق إبداعية ومبتكرة
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info About Us -->
+    <div class="mb-4 bg-overlay2 py-5 relative z-[9]" id="About">
+      <div class="container">
+        <div
+          class="grid grid-cols-12 gap-y-2 items-center py-3 overflow-hidden"
+        >
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-in"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <h3
+              class="text-secondary font-bold text-[35px] relative before:content-[''] before:absolute ltr:before:left-0 rtl:before:right-0 before:bottom-[-10px] before:bg-primary before:w-[120px] before:h-[2px]"
+            >
+              سبل العالم للمقاولات
+            </h3>
+            <p
+              class="max-w-[550px] my-[20px] leading-[30px] text-[15px] text-gray-900/[60%]"
+            >
+              کیان راند تمتد خبراته لأعوام طويلة في مجال المقاولات والإنشاءات
+              المعمارية والإعلان عبر رحلة نجاح مشرفة استطعنا خلالها أن تقدم
+              خدمات رائدة لعملائنا في المملكة العربية السعودية. عملنا خلالها يدا
+              بيد مع الأفراد والمؤسسات للرقي بمستوى الأداء والاحترافية في العمل
+              بطرق إبداعية ومبتكرة کیان راند تمتد خبراته لأعوام طويلة في مجال
+              المقاولات والإنشاءات المعمارية والإعلان عبر رحلة نجاح مشرفة
+              استطعنا خلالها أن تقدم خدمات رائدة لعملائنا في المملكة العربية
+              السعودية. عملنا خلالها يدا بيد مع الأفراد والمؤسسات للرقي بمستوى
+              الأداء والاحترافية في العمل بطرق إبداعية ومبتكرة
+            </p>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-in"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div class="flex justify-center">
+              <img
+                loading="lazy"
+                src="./images/bg-about.png"
+                class="lg:w-[90%] w-full m-auto rounded-[30px] shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Products -->
+    <div class="my-4 relative z-[9] py-[20px]" id="Products">
+      <div class="my-[30px] relative">
+        <h5
+          class="text-secondary font-bold text-[40px] text-center relative before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[-10px] before:m-auto before:bg-primary before:w-[100px] before:h-[2px]"
+        >
+          مشاريعنا
+        </h5>
+      </div>
+      <div class="container relative z-[9] py-9">
+        <div
+          id="sliderProducts"
+          class="owl-carousel owl-theme sliderProducts overflow-hidden"
+        >
+          <div class="item position-relative">
+            <div
+              class="text-center group bg-white rounded-[20px] overflow-hidden border p-3"
+            >
+              <div class="overflow-hidden h-[250px] rounded-[20px] relative">
+                <img
+                  loading="lazy"
+                  src="./images/bg-service.png"
+                  class="w-full h-full m-auto transition duration-500 ease-in-out group-hover:scale-[1.1]"
+                  alt=""
+                />
+                <a
+                  href="./images/bg-service.png"
+                  data-fancybox="watermrk"
+                  data-caption="caption #1"
+                  class="absolute top-0 right-0 w-full h-full bg-overlay flex items-center justify-center text-white transition duration-500 ease-in-out lg:opacity-0 group-hover:opacity-[100%]"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass-plus text-white text-[30px]"
+                  ></i>
+                </a>
+                <h3
+                  class="absolute bottom-[50px] py-3 right-0 w-full text-center bg-primary/[70%] text-white text-[20px] font-bold relative"
+                >
+                  الطرق والجسور
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-9">
+          <a
+            href="our-products.html"
+            class="bg-secondary inline-block m-auto text-[15px] text-white rounded-[10px] px-5 py-3"
+            >مشاهده المزيد</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Success Partners -->
+    <div class="my-4 pt-[30px] relative z-[9]">
+      <div class="my-[30px] relative">
+        <h5
+          class="text-secondary font-bold text-[40px] text-center relative before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[-10px] before:m-auto before:bg-primary before:w-[100px] before:h-[2px]"
+        >
+          شركاء النجاح
+        </h5>
+      </div>
+      <div class="container my-[70px]">
+        <div id="sliderPartners" class="owl-carousel owl-theme sliderPartners">
+          <div class="item text-center group">
+            <img
+              loading="lazy"
+              src="https://static.vecteezy.com/system/resources/previews/012/986/755/non_2x/abstract-circle-logo-icon-free-png.png"
+              alt=""
+              class="!w-[150px] h-[150px] object-contain m-auto transition duration-500 ease-in-out grayscale group-hover:grayscale-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Contact -->
+    <div class="pb-[80px] lg:pt-[30px] relative z-[9]" id="Contact">
+      <div class="my-[30px] relative">
+        <h5
+          class="text-secondary font-bold text-[40px] text-center relative before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[-10px] before:m-auto before:bg-primary before:w-[100px] before:h-[2px]"
+        >
+          اتصل بنا
+        </h5>
+      </div>
+      <div class="container lg:my-[70px] my-[20px]">
+        <div class="grid grid-cols-12 lg:gap-[40px] p-3">
+          <div class="lg:col-span-6 col-span-12 mb-3">
+            <div
+              class="flex lg:items-center gap-[10px] lg:flex-row flex-col mb-7"
+            >
+              <div class="flex items-center gap-2 lg:w-[33%] w-full">
+                <span
+                  class="w-[50px] h-[50px] flex items-center justify-center bg-main rounded-[5px]"
+                  ><img src="./images/phone.png" class="max-w-[40px]" alt=""
+                /></span>
+                <div class="">
+                  <h1 class="text-main">اتصل بنا</h1>
+                  <p
+                    class="text-main text-[13px] font-normal"
+                    style="direction: ltr"
+                  >
+                    +201001846667
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 lg:w-[33%] w-full">
+                <span
+                  class="w-[50px] h-[50px] flex items-center justify-center bg-main rounded-[5px]"
+                  ><img src="./images/email.png" class="max-w-[30px]" alt=""
+                /></span>
+                <div class="">
+                  <h1 class="text-main">راسلنا عبر البريد</h1>
+                  <p class="text-main text-[13px] font-normal">
+                    Sh3wZa@gmail.com
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 lg:w-[33%] w-full">
+                <span
+                  class="w-[50px] h-[50px] flex items-center justify-center bg-main rounded-[5px]"
+                  ><img src="./images/maps.png" class="max-w-[40px]" alt=""
+                /></span>
+                <div class="">
+                  <h1 class="text-main">السعودية _ الرياض</h1>
+                  <p class="text-main text-[13px] font-normal">عنوان الشركه</p>
+                </div>
+              </div>
+            </div>
+            <form action="" class="w-full">
+              <input
+                class="w-full border border-[#ddd] rounded-[5px] mb-3 p-3"
+                type="text"
+                placeholder="الاسم بالكامل"
+              />
+              <input
+                class="w-full border border-[#ddd] rounded-[5px] mb-3 p-3"
+                type="email"
+                placeholder="الإيميل"
+              />
+              <input
+                class="w-full border border-[#ddd] rtl:text-right ltr:text-left rounded-[5px] mb-3 p-3"
+                type="tel"
+                placeholder="رقم الجوال"
+              />
+              <textarea
+                class="w-full border border-[#ddd] rounded-[5px] mb-3 p-3 min-h-[200px] resize-none"
+                name=""
+                id=""
+                placeholder="الرسالة"
+              ></textarea>
+              <button
+                class="bg-secondary text-white m-auto table text-[20px] text-main rounded-[10px] w-full h-[45px]"
+              >
+                إرسال
+              </button>
+            </form>
+          </div>
+          <div class="lg:col-span-6 col-span-12 mt-3">
+            <iframe
+              class="w-full h-[500px]"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=egypt&amp;t=&amp;z=5&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-4 relative z-[9] overflow-hidden">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-4 py-3 overflow-hidden">
+          <div class="lg:col-span-6 col-span-12 px-4">
+            <img
+              loading="lazy"
+              src="./images/logo.png"
+              class="max-h-[120px]"
+              alt=""
+            />
+            <p
+              class="max-w-[550px] my-[15px] leading-[30px] text-[13px] text-white"
+            >
+              کیان راند تمتد خبراته لأعوام طويلة في مجال المقاولات والإنشاءات
+              المعمارية والإعلان عبر رحلة نجاح مشرفة استطعنا خلالها أن تقدم
+              خدمات رائدة لعملائنا في المملكة العربية السعودية. عملنا خلالها يدا
+              بيد مع الأفراد والمؤسسات للرقي بمستوى الأداء والاحترافية في العمل
+              بطرق إبداعية ومبتكرة
+            </p>
+            <ul class="flex items-center flex flex-wrap gap-3 mt-5">
+              <li>
+                <a
+                  href=""
+                  class="w-[30px] h-[30px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="w-[30px] h-[30px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="w-[30px] h-[30px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="w-[30px] h-[30px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-snapchat"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="w-[30px] h-[30px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="w-[30px] h-[30px] text-[13px] flex items-center justify-center bg-white text-secondary rounded-full"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-3 col-span-12 px-4 mt-5">
+            <div>
+              <h5 class="text-primary text-[20px]">الوصول السريع</h5>
+              <ul class="links-footer flex flex-wrap flex-col gap-y-4 my-5">
+                <li>
+                  <a href="index.html" class="text-white text-[16px]"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a href="" data-value="About" class="text-white text-[16px]"
+                    >حول الشركة</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-white text-[16px]">منتجاتنا</a>
+                </li>
+                <li>
+                  <a href="contact-us.html" class="text-white text-[16px]"
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-3 col-span-12 px-4 mt-5">
+            <div>
+              <h5 class="text-primary text-[20px]">معلومات التواصل</h5>
+              <ul class="my-5">
+                <li class="my-5">
+                  <a href="" class="flex items-center gap-3">
+                    <img src="./images/phone.png" class="max-w-[35px]" alt="" />
+                    <span style="direction: ltr" class="text-white text-[16px]"
+                      >+201001846667</span
+                    >
+                  </a>
+                </li>
+                <li class="my-5">
+                  <a href="" class="flex items-center gap-3">
+                    <img src="./images/email.png" class="max-w-[18px]" alt="" />
+                    <span style="direction: ltr" class="text-white text-[16px]"
+                      >Sh3wZa@gmail.com</span
+                    >
+                  </a>
+                </li>
+                <li class="my-5">
+                  <a href="" class="flex items-center gap-3">
+                    <img src="./images/maps.png" class="max-w-[35px]" alt="" />
+                    <span style="direction: ltr" class="text-white text-[16px]"
+                      >السعودية _ الرياض</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+    <div
+      class="p-4 bg-secondary border-t border-white text-center relative z-[9]"
+    >
+      <p class="text-white text-[15px]">جميع الحقوق محفوظة لشركة سنبلة 2024</p>
+    </div>
+
+    <!-- Plugin Jquery -->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- Plugin TailwindCss -->
+    <script type="text/javascript" src="https://cdn.tailwindcss.com"></script>
+    <!-- Plugin OwlCarousel 2 -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    ></script>
+    <!-- Plugin Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- Plugin Flowbite -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"
+    ></script>
+    <!-- Plugin Animation Page -->
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+    <!-- Plugin Text Animation -->
+    <script type="text/javascript" src="./js/script.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1.5rem",
+              sm: "1rem",
+              lg: "2rem",
+              xl: "2rem",
+              "2xl": "3rem",
+            },
+          },
+          extend: {
+            colors: {
+              primary: "#FAB625",
+              secondary: "#015CA7",
+              overlay: "rgba(0, 0, 0, 0.4)",
+              overlay2: "rgb(135 135 135 / 10%)",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
